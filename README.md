@@ -1,2 +1,2 @@
-# JavaScript Recepie app
+# JavaScript Recipe app
  
