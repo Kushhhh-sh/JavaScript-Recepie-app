@@ -10,8 +10,8 @@ let text = document.querySelector('#text');
 
 async function sendApiRequest()
 {
-    let appID = "09565216";
-    let apiKey = "8da93543da30ab74ed025d73ce97bf27";
+    let appID = "da6de1c9";
+    let apiKey = "9b0eee5277b530b10d327f7a42ddcb1e";
     let food = text.value;
     let response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${food}&app_id=${appID}&app_key=${apiKey}`);
     console.log(response);
