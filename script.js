@@ -6,8 +6,6 @@ sendBtn.addEventListener("click", () => {
 
 let text = document.querySelector('#text');
 
-
-
 async function sendApiRequest()
 {
     let appID = "da6de1c9";
