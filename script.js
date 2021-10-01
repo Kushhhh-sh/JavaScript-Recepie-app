@@ -1,10 +1,10 @@
-let sendBtn = document.querySelector('#send');
+let sendBtn = document.querySelector('.btn-outline-warning');
 
 sendBtn.addEventListener("click", () => {
     sendApiRequest();
 })
 
-let text = document.querySelector('#text');
+let text = document.querySelector('.form-control');
 
 async function sendApiRequest()
 {
