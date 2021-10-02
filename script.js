@@ -9,10 +9,10 @@ text.addEventListener("keyup", function (event) {
 });
 
 sendBtn.addEventListener("click", () => {
-    sendApiRequest();
+    sendApiRequest(config);
 })
 
-async function sendApiRequest()
+async function sendApiRequest(config)
 {
     let appID = config.apiID;
     let apiKey = config.apiKey;
