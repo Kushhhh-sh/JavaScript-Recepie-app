@@ -1,7 +1,7 @@
 let sendBtn = document.querySelector('.btn-warning');
 let text = document.querySelector('.form-control');
-let appID = config.apiID;
-let apiKey = config.apiKey;
+let appID = "da6de1c9";
+let apiKey = "9b0eee5277b530b10d327f7a42ddcb1e";
 
 text.addEventListener("keyup", function (event) {
     if (event.keyCode === 13) {
