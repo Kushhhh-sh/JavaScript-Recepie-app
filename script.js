@@ -1,5 +1,7 @@
 let sendBtn = document.querySelector('.btn-warning');
 let text = document.querySelector('.form-control');
+let appID = config.apiID;
+let apiKey = config.apiKey;
 
 text.addEventListener("keyup", function (event) {
     if (event.keyCode === 13) {
@@ -9,13 +11,11 @@ text.addEventListener("keyup", function (event) {
 });
 
 sendBtn.addEventListener("click", () => {
-    sendApiRequest(config);
+    sendApiRequest();
 })
 
-async function sendApiRequest(config)
+async function sendApiRequest()
 {
-    let appID = config.apiID;
-    let apiKey = config.apiKey;
     let food = text.value;
     let response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${food}&app_id=${appID}&app_key=${apiKey}`);
     // console.log(response);
