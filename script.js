@@ -58,5 +58,70 @@ function addCard(data){
                 <p class="card-text">Cuisine Type: ${data.hits[3].recipe.cuisineType}<br>Dish Type: ${data.hits[2].recipe.dishType}<br>Meal Type: ${data.hits[2].recipe.mealType}</p>
                 <a href="${data.hits[3].recipe.url}" class="btn btn-primary" target="_blank">See Recipe</a>
             </div>
-    </div> `
+    </div> 
+    <div class="card">
+        <img src="${data.hits[4].recipe.image}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${data.hits[4].recipe.label}</h5>
+                <p class="card-text">Cuisine Type: ${data.hits[4].recipe.cuisineType}<br>Dish Type: ${data.hits[2].recipe.dishType}<br>Meal Type: ${data.hits[2].recipe.mealType}</p>
+                <a href="${data.hits[4].recipe.url}" class="btn btn-primary" target="_blank">See Recipe</a>
+            </div>
+    </div>
+    <div class="card">
+        <img src="${data.hits[5].recipe.image}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${data.hits[5].recipe.label}</h5>
+                <p class="card-text">Cuisine Type: ${data.hits[5].recipe.cuisineType}<br>Dish Type: ${data.hits[2].recipe.dishType}<br>Meal Type: ${data.hits[2].recipe.mealType}</p>
+                <a href="${data.hits[5].recipe.url}" class="btn btn-primary" target="_blank">See Recipe</a>
+            </div>
+    </div>
+    <div class="card">
+        <img src="${data.hits[6].recipe.image}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${data.hits[6].recipe.label}</h5>
+                <p class="card-text">Cuisine Type: ${data.hits[6].recipe.cuisineType}<br>Dish Type: ${data.hits[2].recipe.dishType}<br>Meal Type: ${data.hits[2].recipe.mealType}</p>
+                <a href="${data.hits[6].recipe.url}" class="btn btn-primary" target="_blank">See Recipe</a>
+            </div>
+    </div>
+    <div class="card">
+        <img src="${data.hits[7].recipe.image}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${data.hits[7].recipe.label}</h5>
+                <p class="card-text">Cuisine Type: ${data.hits[7].recipe.cuisineType}<br>Dish Type: ${data.hits[2].recipe.dishType}<br>Meal Type: ${data.hits[2].recipe.mealType}</p>
+                <a href="${data.hits[7].recipe.url}" class="btn btn-primary" target="_blank">See Recipe</a>
+            </div>
+    </div> 
+    <div class="card">
+        <img src="${data.hits[8].recipe.image}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${data.hits[8].recipe.label}</h5>
+                <p class="card-text">Cuisine Type: ${data.hits[8].recipe.cuisineType}<br>Dish Type: ${data.hits[2].recipe.dishType}<br>Meal Type: ${data.hits[2].recipe.mealType}</p>
+                <a href="${data.hits[8].recipe.url}" class="btn btn-primary" target="_blank">See Recipe</a>
+            </div>
+    </div>
+    <div class="card">
+        <img src="${data.hits[9].recipe.image}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${data.hits[9].recipe.label}</h5>
+                <p class="card-text">Cuisine Type: ${data.hits[9].recipe.cuisineType}<br>Dish Type: ${data.hits[2].recipe.dishType}<br>Meal Type: ${data.hits[2].recipe.mealType}</p>
+                <a href="${data.hits[9].recipe.url}" class="btn btn-primary" target="_blank">See Recipe</a>
+            </div>
+    </div>
+    <div class="card">
+        <img src="${data.hits[10].recipe.image}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${data.hits[10].recipe.label}</h5>
+                <p class="card-text">Cuisine Type: ${data.hits[10].recipe.cuisineType}<br>Dish Type: ${data.hits[2].recipe.dishType}<br>Meal Type: ${data.hits[2].recipe.mealType}</p>
+                <a href="${data.hits[10].recipe.url}" class="btn btn-primary" target="_blank">See Recipe</a>
+            </div>
+    </div>
+    <div class="card">
+        <img src="${data.hits[11].recipe.image}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${data.hits[11].recipe.label}</h5>
+                <p class="card-text">Cuisine Type: ${data.hits[11].recipe.cuisineType}<br>Dish Type: ${data.hits[2].recipe.dishType}<br>Meal Type: ${data.hits[2].recipe.mealType}</p>
+                <a href="${data.hits[11].recipe.url}" class="btn btn-primary" target="_blank">See Recipe</a>
+            </div>
+    </div> 
+    `
 }
