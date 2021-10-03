@@ -17,7 +17,7 @@ sendBtn.addEventListener("click", () => {
 async function sendApiRequest()
 {
     let food = text.value;
-    let response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${food}&app_id=${appID}&app_key=${apiKey}`);
+    let response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${food}&app_id=${appID}&app_key=${apiKey}&random=true`);
     // console.log(response);
     let data = await response.json();
     // console.log(data);
