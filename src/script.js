@@ -125,3 +125,16 @@ function addCard(data){
     </div> 
     `
 }
+
+
+let filter = document.querySelector('.btn-secondary');
+let close = document.querySelector('.fa-times');
+let filterBox = document.querySelector('.filters')
+
+filter.addEventListener("click", () => {
+    filterBox.style.display = "block";
+})
+
+close.addEventListener("click", () => {
+    filterBox.style.display = "none";
+})
