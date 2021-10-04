@@ -17,7 +17,8 @@ sendBtn.addEventListener("click", () => {
 async function sendApiRequest()
 {
     let food = text.value;
-    let response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${food}&app_id=${appID}&app_key=${apiKey}&random=true`);
+    let apiLink = `https://api.edamam.com/api/recipes/v2?type=public&q=${food}&app_id=${appID}&app_key=${apiKey}&random=true`;
+    let response = await fetch(apiLink);
     // console.log(response);
     let data = await response.json();
     // console.log(data);
@@ -138,3 +139,12 @@ filter.addEventListener("click", () => {
 close.addEventListener("click", () => {
     filterBox.style.display = "none";
 })
+
+function getit(){
+    let mealType = document.querySelector('#mealType').value;
+    let diet = document.querySelector('#diet').value;
+    let dish = document.querySelector('#dish').value;
+    console.log(mealType);
+    console.log(diet);
+    console.log(dish);
+}
