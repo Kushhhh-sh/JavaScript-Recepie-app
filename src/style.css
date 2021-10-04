@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,6 +13,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #caf0f8;
+  font-family: 'Ubuntu';
 }
 
 body .search {
@@ -62,23 +64,40 @@ body #main > .card > .card-body {
 }
 
 .filters {
-  width: 90%;
-  height: 90%;
+  width: 50%;
+  height: 50%;
   position: fixed;
-  display: none;
-  top: 5%;
-  left: 5%;
+  border-radius: 15px;
+  top: 25%;
+  left: 25%;
   z-index: 3;
   background-color: white;
+  -webkit-box-shadow: 10px 10px 15px gray;
+          box-shadow: 10px 10px 15px gray;
 }
 
 .filters .fa-times {
   cursor: pointer;
+  font-size: 25px;
+  margin: 10px 10px;
+  position: absolute;
+  right: 5px;
+}
+
+.filters h3 {
+  text-align: center;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 758px) {
   body .input-group {
     width: 95%;
+  }
+  .filters {
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */
