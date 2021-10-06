@@ -100,6 +100,8 @@ body #main > .card > .card-body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 15px;
+  padding-left: 10px;
 }
 
 @media screen and (max-width: 758px) {
