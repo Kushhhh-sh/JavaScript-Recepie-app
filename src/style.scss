@@ -1,15 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
 
-body{
+body {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
     height: 100vh;
     background-color: #caf0f8;
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
 
-    & .search{
+    & .search {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -17,36 +17,36 @@ body{
         margin: 15px 0;
     }
 
-    & .input-group{
+    & .input-group {
         width: 60%;
     }
 
-    & .fa-filter{
+    & .fa-filter {
         font-size: 18px;
     }
 
-    & #main{
+    & #main {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
 
-        & > .card{
+        & > .card {
             margin: 15px;
 
-            & > .card-img-top{
+            & > .card-img-top {
                 width: 300px;
                 height: 300px;
             }
 
-            & > .card-body{
+            & > .card-body {
                 width: 300px;
             }
         }
     }
 }
 
-.filters{
+.filters {
     width: 50%;
     height: 50%;
     position: fixed;
@@ -58,7 +58,7 @@ body{
     background-color: white;
     box-shadow: 10px 10px 15px gray;
 
-    & .fa-times{
+    & .fa-times {
         cursor: pointer;
         font-size: 25px;
         margin: 10px 10px;
@@ -66,29 +66,28 @@ body{
         right: 5px;
     }
 
-    & h3{
+    & h3 {
         text-align: center;
         margin-top: 10px;
     }
 
-    & .filterOptions{
-        display:flex;
-        justify-content:space-evenly;
+    & .filterOptions {
+        display: flex;
+        justify-content: space-evenly;
         align-items: center;
         margin-top: 15px;
     }
 }
-.filterType{
+.filterType {
     margin-left: 5%;
     margin-right: 5%;
 }
 
-@media screen and (max-width: 758px)
-{
-    body .input-group{
+@media screen and (max-width: 758px) {
+    body .input-group {
         width: 95%;
     }
-    .filters{
+    .filters {
         width: 80%;
         height: 80%;
         top: 10%;
@@ -96,17 +95,30 @@ body{
     }
 }
 
-@media screen and (max-width: 1050px)
-{
-    .filterType{
+@media screen and (max-width: 1050px) {
+    .filterType {
         margin-left: 2%;
         margin-right: 2%;
     }
 }
-@media screen and (max-width: 910px) and (min-width: 758px)
-{
-    .filterType{
+@media screen and (max-width: 910px) and (min-width: 758px) {
+    .filterType {
         margin-left: 0;
         margin-right: 0;
+    }
+}
+@media screen and (max-width: 560px) {
+    .filterOptions {
+        flex-direction: column;
+    }
+    .filterType {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .mealTypeDiv {
+        left: -50px;
+    }
+    .dietDiv {
+        left: -18px;
     }
 }

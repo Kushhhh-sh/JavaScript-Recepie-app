@@ -13,7 +13,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #caf0f8;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
 }
 
 body .search {
@@ -131,6 +131,25 @@ body #main > .card > .card-body {
   .filterType {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .filterOptions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filterType {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .mealTypeDiv {
+    left: -50px;
+  }
+  .dietDiv {
+    left: -18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
