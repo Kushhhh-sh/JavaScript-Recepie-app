@@ -140,7 +140,8 @@ close.addEventListener("click", () => {
     filterBox.style.display = "none";
 })
 
-function getit(){
+function getit() {
+    sendApiRequest();
     let mealType = document.querySelector('#mealType').value;
     let diet = document.querySelector('#diet').value;
     let dish = document.querySelector('#dish').value;
