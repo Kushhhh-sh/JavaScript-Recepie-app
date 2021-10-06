@@ -122,3 +122,9 @@ body {
         left: -18px;
     }
 }
+
+@media screen  and (max-width: 350px) {
+    .filterType{
+        position:static;
+    }
+}
