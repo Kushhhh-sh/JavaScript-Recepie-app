@@ -70,6 +70,12 @@ body{
         text-align: center;
         margin-top: 10px;
     }
+
+    & .filterOptions{
+        display:flex;
+        justify-content:space-evenly;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 758px)

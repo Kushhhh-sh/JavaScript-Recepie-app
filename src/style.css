@@ -90,6 +90,18 @@ body #main > .card > .card-body {
   margin-top: 10px;
 }
 
+.filters .filterOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media screen and (max-width: 758px) {
   body .input-group {
     width: 95%;
