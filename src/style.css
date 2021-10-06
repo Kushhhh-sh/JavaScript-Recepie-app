@@ -103,6 +103,11 @@ body #main > .card > .card-body {
   margin-top: 15px;
 }
 
+.filterType {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 @media screen and (max-width: 758px) {
   body .input-group {
     width: 95%;
@@ -112,6 +117,20 @@ body #main > .card > .card-body {
     height: 80%;
     top: 10%;
     left: 10%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .filterType {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media screen and (max-width: 910px) and (min-width: 758px) {
+  .filterType {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
