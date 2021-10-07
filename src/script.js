@@ -16,12 +16,24 @@ sendBtn.addEventListener("click", () => {
 
 async function sendApiRequest()
 {
+    let mealType = document.querySelector('#mealType').value;
+    let diet = document.querySelector('#diet').value;
+    let dish = document.querySelector('#dish').value;
     let food = text.value;
     let apiLink = `https://api.edamam.com/api/recipes/v2?type=public&q=${food}&app_id=${appID}&app_key=${apiKey}&random=true`;
+    if(mealType !== "")
+        apiLink = apiLink + `&mealType=${mealType}`;
+
+    if(dish !== "")
+        apiLink = apiLink + `&dishType=${dish}`;
+
+    if(diet !== "")
+        apiLink = apiLink + `&diet=${diet}`;
+
     let response = await fetch(apiLink);
-    // console.log(response);
+    console.log(response);
     let data = await response.json();
-    // console.log(data);
+    console.log(data);
     addCard(data);
 }
 
@@ -139,13 +151,3 @@ filter.addEventListener("click", () => {
 close.addEventListener("click", () => {
     filterBox.style.display = "none";
 })
-
-function getit() {
-    sendApiRequest();
-    let mealType = document.querySelector('#mealType').value;
-    let diet = document.querySelector('#diet').value;
-    let dish = document.querySelector('#dish').value;
-    // console.log(mealType);
-    // console.log(diet);
-    // console.log(dish);
-}
