@@ -33,7 +33,7 @@ async function sendApiRequest()
     let response = await fetch(apiLink);
     // console.log(response);
     let data = await response.json();
-    console.log(data);
+    // console.log(data);
     addCard(data);
 }
 
