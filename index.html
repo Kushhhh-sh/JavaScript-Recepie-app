@@ -46,7 +46,7 @@
         <div class="filterOptions">
             <div class="filterType mealTypeDiv">
                 <label for="mealType">Meal Type: </label>
-                <select name="mealType" id="mealType">
+                <select name="mealType" id="mealType" onchange="sendApiRequest()">
                     <option value=""></option>
                     <option value="Breakfast">Breakfast</option>
                     <option value="Lunch">Lunch</option>
@@ -57,7 +57,7 @@
             </div>
             <div class="filterType dietDiv">
                 <label for="diet">Diet: </label>
-                <select name="diet" id="diet">
+                <select name="diet" id="diet" onchange="sendApiRequest()">
                     <option value=""></option>
                     <option value="balanced">Balanced</option>
                     <option value="high-fiber">High Fiber</option>
@@ -69,7 +69,7 @@
             </div>
             <div class="filterType dishTypeDiv">
                 <label for="dish">Dish Type: </label>
-                <select name="dish" id="dish">
+                <select name="dish" id="dish" onchange="sendApiRequest()">
                     <option value=""></option>
                     <option value="Biscuits%20and%20cookies">Biscuits and cookies</option>
                     <option value="Bread">Bread</option>
