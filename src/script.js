@@ -145,7 +145,7 @@ function getit() {
     let mealType = document.querySelector('#mealType').value;
     let diet = document.querySelector('#diet').value;
     let dish = document.querySelector('#dish').value;
-    console.log(mealType);
-    console.log(diet);
-    console.log(dish);
+    // console.log(mealType);
+    // console.log(diet);
+    // console.log(dish);
 }
