@@ -108,29 +108,9 @@ body #main > .card > .card-body {
   margin-right: 5%;
 }
 
-@media screen and (max-width: 758px) {
-  body .input-group {
-    width: 95%;
-  }
-  .filters {
-    width: 80%;
-    height: 80%;
-    top: 10%;
-    left: 10%;
-  }
-}
-
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 350px) {
   .filterType {
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-}
-
-@media screen and (max-width: 910px) and (min-width: 758px) {
-  .filterType {
-    margin-left: 0;
-    margin-right: 0;
+    position: static;
   }
 }
 
@@ -153,9 +133,22 @@ body #main > .card > .card-body {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 920px) {
+  body .input-group {
+    width: 95%;
+  }
+  .filters {
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
   .filterType {
-    position: static;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
 /*# sourceMappingURL=style.css.map */
