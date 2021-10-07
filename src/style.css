@@ -63,6 +63,10 @@ body #main > .card > .card-body {
   width: 300px;
 }
 
+.veg-non-veg-img {
+  width: 30px;
+}
+
 .filters {
   width: 50%;
   height: 50%;
