@@ -30,11 +30,7 @@ async function sendApiRequest()
     if(diet !== "")
         apiLink = apiLink + `&diet=${diet}`;
 
-    let response = await fetch(apiLink);
-    // console.log(response);
-    let data = await response.json();
-    // console.log(data);
-    addCard(data);
+    fetch(apiLink).then(responses => responses.json()).then(data => addCard(data))
 }
 
 function addCard(data){
